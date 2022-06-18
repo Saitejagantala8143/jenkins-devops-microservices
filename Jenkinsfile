@@ -1,8 +1,8 @@
 //SCRIPTED PIPELINE (STAGE BLOCKS ARE OPTIONAL)
 //DECLARATIVE (all your tasks in STAGES, We cannot have any pipeline without stages )
 pipeline {
-	//agent any
-	agent { docker { image 'maven:3.5.2'} }
+
+	agent { docker { image 'maven:3.6.3'} }
 	stages {
 		stage('Build') {
 			steps {
