@@ -2,7 +2,7 @@
 //DECLARATIVE (all your tasks in STAGES, We cannot have any pipeline without stages )
 pipeline {
 	//agent any
-	agent { docker { image 'maven:3.6.3'} }
+	agent { docker { image 'maven:3.5.2'} }
 	stages {
 		stage('Build') {
 			steps {
